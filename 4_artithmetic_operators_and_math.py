@@ -13,7 +13,11 @@ friends = 10
 # friends **= 2
 # reminder = friends % 3  #dividing friends into group of 3 / při zjieštění EVEN ČÍSLA = bude u tohoto operatoru vždy 0
 
-
+# % MODULO operátor = Vrací zbytek po dělení dvou čísel
+#výsledek bude 1 jelikož -> 3 rozdělíme na 1 a 1,  zbyde tedy 1 (10%3 -> 10 děleno 3 je 3, zbytek 1
+modulo = 3
+vysledek = 3 % 2
+print(vysledek)
 
 x = 3.14
 y = 4
