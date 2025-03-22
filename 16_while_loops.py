@@ -1,6 +1,6 @@
 # while loop = execute some code WHILE some coidition remains true
 # loop cyklus pojede dokud nekterá z podmínek bude TRUE
-
+# while True -> smyčka běží nekonečně, než se explicitně zastaví přes příkaz BREAK
 
 '''
 name = input("napiš jméno: ")

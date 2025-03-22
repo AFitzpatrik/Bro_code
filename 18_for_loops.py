@@ -1,12 +1,19 @@
 #for loop =execude a b lock of code a fixed of times.
 #               You can iterate over a range, string, sequence, etc.
 # lepší v případech kdy nemá loop jet do nekonečna, pouze určitý počet pokusů
+# https://www.youtube.com/watch?v=dHANJ4l6fwA
+
+#Nejčastěji se for loop používá s funkcí range(), která generuje posloupnost čísel.
+
+
+#for i in range(5):  # i postupně nabývá hodnot 0, 1, 2, 3, 4   - (5) značí že se for loop provede 5x, tzn. vyprintuje 0 1 2 3 4
+#   print(i)
 
 
 
 
 '''
-for x in range(1, 21):
+for x in range(1, 21): # loop control variable, iteration variable = x, variable represent each listed item one at the time
     if x == 13:
         continue #skip over ideration
     else:
@@ -43,3 +50,9 @@ else:
     print("Přístup odepřen!")
 '''
 
+
+'''
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:    # for every FRUIT in FRUITS
+    print(fruit) 
+'''
