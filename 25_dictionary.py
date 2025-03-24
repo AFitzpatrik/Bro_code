@@ -24,7 +24,7 @@ else:
 #capitals.clear() - Odstarní vše v dictionary
 #capitals.keys() - vráti klíče z dictionary
 #capitals.values() - vrátí values z dictionary
-#capitals.items() -
+#capitals.items() - Funkce  u slovníku vrací všechny klíče i jejich hodnoty jako dvojice
 
 '''
 for key, value in capitals.items():
