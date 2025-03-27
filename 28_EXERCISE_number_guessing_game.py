@@ -1,3 +1,4 @@
+
 #Python number guessing game
 import random
 
@@ -32,5 +33,3 @@ while is_running:
 else:
     print("This is not a number! Try again: ")
     print(f"Enter a number between {lowest_num} and {highest_num}: ")
-
-
