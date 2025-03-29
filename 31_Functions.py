@@ -67,6 +67,16 @@ print(divide(1, 2))
 '''
 
 
+'''
+def multiply(num1, num2):
+  return num1 * num2   #return num * num 2 a poté ho stornem ve proměnné x
+
+x = multiply(6, 8)
+
+print(x)
+'''
+
+
 def create_name(first, last):
     first = first.capitalize()
     last = last.capitalize()
