@@ -18,6 +18,7 @@ print(pi)
 '''
 
 import example_module
+#vytvořen jako .py soubor zde v projektu
 
 result = example_module.pi
 result = example_module.square(3)
