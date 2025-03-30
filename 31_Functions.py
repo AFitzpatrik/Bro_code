@@ -1,6 +1,25 @@
 # functions - block of reusable code
 #             place () after the function name to invoke it
 
+#NÁZVY#
+#def happy - definuji funkci, happy je NÁZEV FUNKCE
+#happy(name, age) - v závorce jsou parametry. Name a age jsou PARAMETRY
+#happy("Bob", 20) - tímto zavolám již hotovou funkci, s argumenty které chci v závorce. V závorce jsou ARGUMENTY Bob a 20
+
+
+'''
+def add(a, b):  #jmeno funkce(parametr1,parametr2)
+    return a + b #obsah funkce, co funkce provede po zavolání
+
+add(1, 2) #add - zavolání funkce, 1 = argument, 2 = argument
+print(add(1, 2)) #vyprintování funkce
+'''
+
+
+
+
+
+
 
 
 '''
