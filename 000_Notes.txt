@@ -1,0 +1,5 @@
+---Poznámky---
+
+***Slovník***
+Even number = Sudé číslo = Lze dělit dvěma bez zbytku
+Odd number = Liché číslo = Po dělení dvěma mají zbytek

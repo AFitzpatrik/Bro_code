@@ -41,10 +41,21 @@ fruits = ["apple", "banana", "cherry"]
 fruit_chars = [fruit[0] for fruit in fruits]
 print(fruit_chars)
 '''
-
-numbers = [1, -2, 3, -4, 5, -6]
+#EXERCISE
+'''
+numbers = [1, -2, 3, -4, 5, -6, 8, -7]
 positive_list = [num for num in numbers if num >= 0]
 negative_list = [num for num in numbers if num < 0]
-even_numbers =
+even_numbers = [num for num in numbers if num % 2 == 0] # % vydělí 2 a vrátí zbytek
+odd_numbers = [num for num in numbers if num % 2 ==1]
 print(positive_list)
 print(negative_list)
+print(even_numbers)
+print(odd_numbers)
+'''
+
+#EXERCISE
+grades = [85, 42, 79, 90, 56, 61, 30]
+passing_grades = [grade for grade in grades if grade >= 60]
+print(passing_grades)
+
