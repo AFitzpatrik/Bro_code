@@ -3,3 +3,14 @@
 ***Slovník***
 Even number = Sudé číslo = Lze dělit dvěma bez zbytku
 Odd number = Liché číslo = Po dělení dvěma mají zbytek
+
+
+
+
+
+
+***Links***
+How I learned to Code in 6 MONTHS & Got a Job Offer (Self-Taught)
+https://www.youtube.com/watch?v=nP0-oYGiqts
+https://www.hyr.sh
+https://www.smoljames.com/roadmap
