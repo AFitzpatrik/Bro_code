@@ -1,7 +1,3 @@
-def create_name(first, last):
-    first = first.capitalize()
-    last = last.capitalize()
-    return first + " " + last
-
-
-create_name()
+phone_number = "5142121491129129"
+phone_number.count("3")
+print(phone_number.count("9"))

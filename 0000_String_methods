@@ -1,0 +1,23 @@
+#result = len() - délka stringu
+
+#result = name.find(" ") # najdu znak ve stringu, vráti pozici prvního nalezeného znaku(first occurance)
+#               Pokud nemůže python najít, vytiskne -1
+
+#result = name.rfind(" ") #reverse find, najde poslední znak (firt occurance zezadu)
+#               Pokud nemůže python najít, vytiskne -1
+
+#name = name.capitalize() - da velké písmeno na první místo stringu
+
+#name = name.upper() - přepíše input na UPPER CASE
+
+#name = name.lower() - přepíše input na lower ase
+
+#result = name.isdigit() - vráti bool, bud FALSE nebo TRUE. Pokud jsou v name pouze čísla =TRUE, kombinace čísla-písmen = FALSE, Písmena = FALSE
+
+#result = name.isalpha() - vráti bool, bud FALSE nebo TRUE. Pokud jsou v name pouze písmena =TRUE, kombinace čísla-písmen = FALSE, čísla = FALSE
+
+#result = phone_number.count("-") - vypočítá kolikrát je znak ve stringu
+
+#phone_number = phone_number.replace("-", "") - replacne první znak druhým, v tomto případě - vymění za prázdný string
+
+#print(help(str)) - vypíše list string funkcí
