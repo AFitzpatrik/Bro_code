@@ -19,7 +19,7 @@ options = options = (
 answers = ("C", "D", "A", "A", "B")
 guesses = []
 score = 0
-question_num = 0
+question_num = 0 #Tato proměnná zjištuje v jaké otázce zrovna jsme, začínáme na indexu 0
 
 
 for question in questions:
