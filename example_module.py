@@ -14,3 +14,6 @@ def circumference(radius):
 
 def area(radius):
     return pi * radius ** 2
+
+
+#tento modul je k 39_modules.py
