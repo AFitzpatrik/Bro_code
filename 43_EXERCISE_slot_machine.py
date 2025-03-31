@@ -35,6 +35,8 @@ def main():
             print("Please enter a valid number.")
             continue
 
+        bet = int(bet)
+
 
 
 if __name__ == "__main__":
