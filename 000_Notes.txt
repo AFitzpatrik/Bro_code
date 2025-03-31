@@ -36,3 +36,6 @@ https://www.youtube.com/watch?v=nP0-oYGiqts
 https://www.hyr.sh
 https://www.smoljames.com/roadmap
 
+#Bro code
+Course: https://www.youtube.com/watch?v=ix9cRaBkVe0&t=745s
+Exercises : https://www.youtube.com/watch?v=4wGuB3oAKc4
