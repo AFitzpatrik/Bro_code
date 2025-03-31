@@ -1,6 +1,7 @@
-def print_power(**kwargs):
-    for key, value in kwargs.items():
-        print(f"Auto {key} má výkon {value}")
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
 
 
-print_power(skoda=130, mazda=200, bmw=250)
+create_name()
