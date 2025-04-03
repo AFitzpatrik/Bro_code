@@ -1,11 +1,12 @@
 import random
 #SLOT MACHINE EXERCISE 🍒🍉🍋🔔⭐
-symbols = ("🍒", "🍉", "🍋", "🔔", "⭐")
+
 
 
 
 def spin_row():
-    pass
+    symbols = ("🍒", "🍉", "🍋", "🔔", "⭐")
+    return [random.choice(symbols) for _ in range(3)]
 
 
 
@@ -30,20 +31,23 @@ def main():
         print(f"Current balance: {balance} KČ")
         bet = input("How much would you like to bet?: ")
         if not bet.isdigit():
-            print("Please enter a valid number.")
+            print("PLEASE ENTER VALID NUMBER!")
             continue
 
         bet = int(bet)
 
         if bet > balance:
-            print("Not enough funds.")
+            print("NOT ENOUGH BALANCE!")
             bet = input("How much would you like to bet?: ")
             continue #Continue přeruší tuto část a vráti se na úplný začátek while cyklu (while balance > 0...) Protože uživatel bude číslo zadávat znovu a je potřeba tedy projet cyklus znovu a zkontrolovat .is digit a až poté jestli je input menší než bet.
+
         if bet <= 0:
-            print("Bet must be greater than 0.")
+            print("BET MUST BE GREATER THAN 0!")
             continue
 
-    balance -= bet
+        balance -= bet
+        row = spin_row() #Funkce spin() zavolá list, proto před ní dáme row = přiradíme jí tuto proměnnou
+        print(row)
 
 if __name__ == "__main__":
     main()
