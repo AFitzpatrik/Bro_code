@@ -38,7 +38,7 @@ def main():
         if bet > balance:
             print("Not enough funds.")
             bet = input("How much would you like to bet?: ")
-            continue
+            continue #Continue přeruší tuto část a vráti se na úplný začátek while cyklu (while balance > 0...) Protože uživatel bude číslo zadávat znovu a je potřeba tedy projet cyklus znovu a zkontrolovat .is digit a až poté jestli je input menší než bet.
         if bet <= 0:
             print("Bet must be greater than 0.")
             continue
