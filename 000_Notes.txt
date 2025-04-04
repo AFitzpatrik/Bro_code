@@ -26,6 +26,10 @@ a bude se počítat jako kdyby uživatel zadal 0, nemusím teda ošetřovat ješ
 
 
 
+" ".join - přidá za každý element v listu string který zadáme
+print(" ".join(row))
+
+
 
 
 
@@ -39,3 +43,4 @@ https://www.smoljames.com/roadmap
 #Bro code
 Course: https://www.youtube.com/watch?v=ix9cRaBkVe0&t=745s
 Exercises : https://www.youtube.com/watch?v=4wGuB3oAKc4
+
