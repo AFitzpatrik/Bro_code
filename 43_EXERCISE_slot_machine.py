@@ -10,7 +10,7 @@ def spin_row():
 
 
 
-def print_row():
+def print_row(row): #Funkce print_row nemá přístup k proměnným mimo svůj vlastní obsah, musí být tedy přidán do argumentu
     pass
 
 
@@ -46,8 +46,10 @@ def main():
             continue
 
         balance -= bet
+
         row = spin_row() #Funkce spin() zavolá list, proto před ní dáme row = přiradíme jí tuto proměnnou
-        print(row)
+        print("Spinning...\n") #\n = ně line
+        print_row(row)
 
 if __name__ == "__main__":
     main()
