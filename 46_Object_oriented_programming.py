@@ -13,7 +13,7 @@ def call_phone(): #toto je funkce, kterou může objekt vykonat
 
 from class_for_OOP_46 import Car #takto importujeme object CAR z filu class_for_OOP_46.py
 
-car_1 = Car("Mustang", 2024, "red", False)
+car_1 = Car("Mustang", 2024, "red", False)  #toto jsou objekty
 car_2 = Car("Corvette", 2025, "blue", True)
 car_3 = Car("Charger", 2026, "yellow", True)
 
