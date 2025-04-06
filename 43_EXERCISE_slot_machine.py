@@ -20,6 +20,17 @@ def get_payout(row, bet):
     if row[0] == row[1] == row[2]:
         if row[0] == "🍒":
             return bet * 3
+        elif row[0] == "🍉":
+            return bet * 4
+        elif row[0] == "🍋":
+            return bet * 5
+        elif row[0] == "🔔":
+            return bet * 10
+        elif row[0] == "⭐":
+            return bet * 20
+    else:
+        return 0 #toto je mimo if statement, znamená to tedy, že pokud nenastane varianta if row 0 == row 1 == row 2, hráč nedostane nic protože nemá match
+
 
 
 def main():
@@ -55,6 +66,17 @@ def main():
         print_row(row)
 
         payout = get_payout(row, bet)
+
+        if payout > 0:
+            print(f"You won {payout} Kč")
+        else:
+            print("Sorry, you lost this round!")
+        balance += payout
+
+        play_again = input("Play again? (Y/N): ").upper()
+        if play_again != "Y":
+            break
+
 
 if __name__ == "__main__":
     main()
