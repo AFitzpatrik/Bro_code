@@ -4,16 +4,24 @@
 #               C(B) <- B(A) <- A
 
 
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-class Prey:
+    def eat(self):
+        print(f"This {self.name} is eating!")
+
+    def sleep(self):
+        print(f"This {self.name} is sleeping!")
+
+class Prey(Animal):
     def flee(self):
-        print("This animal is fleeing!")
+        print(f"This {self.name} is fleeing!")
 
 
-
-class Predator:
+class Predator(Animal):
     def hunt(self):
-        print("This animal is hunting!")
+        print(f"This {self.name} is hunting!")
 
 
 class Rabbit(Prey):
@@ -28,9 +36,11 @@ class Fish(Prey, Predator):
     pass
 
 
-rabbit = Rabbit()
-hawk = Hawk()
-fish = Fish()
+rabbit = Rabbit("Bugs")
+hawk = Hawk("Tonny")
+fish = Fish("Nemo")
 
 fish.flee()
 fish.hunt()
+fish.sleep()
+fish.eat()
