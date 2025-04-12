@@ -16,11 +16,17 @@ class Circle(Shape):
 
     def describe(self):
         print(f"It is a circle withe and area of {3.14 * self.radius * self.radius} cm^2")
+        #zde nyní chceme jak describe od parent classy, tak i od child classy. Použijeme tedy super na parent classu
+        super().describe()
 
 class Square(Shape):
     def __init__(self, color, is_filled, width):
         super().__init__(color, is_filled)
         self.width = width
+    def describe(self):
+        print(f"It is a square with an area of {self.width * self. width} cm^2")
+        #zde nyní chceme jak describe od parent classy, tak i od child classy. Použijeme tedy super na parent classu
+        super().describe()
 
 
 class Triangle(Shape):
@@ -28,7 +34,10 @@ class Triangle(Shape):
         super().__init__(color, is_filled)
         self.width = width
         self.height = height
-
+    def describe(self):
+        print(f"It is a triangle with an area of {self.width * self.height /2} cm^2")
+        #zde nyní chceme jak describe od parent classy, tak i od child classy. Použijeme tedy super na parent classu
+        super().describe()
 
 
 
@@ -36,6 +45,7 @@ class Triangle(Shape):
 circle = Circle("red", True, 5)
 square = Square("blue", False, 6)
 triangle = Triangle("green", True, 7, 8)
+
 print(circle.color)
 print(circle.is_filled)
 print(f"{circle.radius} cm")
@@ -51,7 +61,7 @@ print(f"{triangle.width} cm")
 print(f"{triangle.height} cm")
 
 
-circle.describe()
+
 square.describe()
 triangle.describe()
 circle.describe()
@@ -59,4 +69,4 @@ circle.describe()
 #V tomto příkladu má mají classy spoločné color,is filled ale pak mají jiné proměnné
 #Abychom nemuseli psát color a is_filled do každé classy, použijeme super()
 
-#pokud jsou dvě metohdy (v tomto případe describe) stejné, tak se zavolá ta z child classy, ne z parent classy
+#pokud jsou dvě metohdy (v tomto případe describe) stejné, tak se zavolá ta z child classy, ne z parent classy(method overriding)
