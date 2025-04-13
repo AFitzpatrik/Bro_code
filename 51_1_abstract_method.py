@@ -5,4 +5,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #https://www.youtube.com/watch?v=97V7ICVeTJc
+#https://www.itnetwork.cz/python/oop/abstraktni-tridy-v-pythonu

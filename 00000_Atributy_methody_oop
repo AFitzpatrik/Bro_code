@@ -1,0 +1,13 @@
+V OOP
+
+ATRIBUTY(ATRIBUTES)
+def __init_(self, jmeno, vaha):
+# Toto jsou atributy, proměnné které můžeme např. zadat/měnit
+
+
+METODY(METHODS)
+def_pohybuje se(self):
+#metoda - > Funkce uvnitř třídy
+např:
+def pohyb_zvirete()
+def spani_zvirete() atd.
