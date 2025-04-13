@@ -1,6 +1,23 @@
+class Clovek:
+    def __init__(self, jmeno, vek):
+        self.jmeno = jmeno
+        self.vek = vek
 
-def display_invoice(username, amount, due_date):
-    print(f"Hello {username}, this is your invoice for ${amount} due on {due_date}:")
+    def pohybuje_se(self):
+        pass
 
-display_invoice("Patrik", "50,000", "2.11.1996")
-display_invoice("Filip", "40,000", "11.14.1999")
+class Student(Clovek):
+    def __init__(self, jmeno, vek, prospech):
+        super().__init__(jmeno, vek)
+        self.prospech = prospech
+
+    def uceni_se(self):
+        print(f"Student : {self.jmeno} se učí.Je mu {self.vek} a má prospěch {self.prospech}.")
+
+
+student = Student("Jakub", 18, "vyznamenání")
+student2 = Student("Tonda", 18, "propadl")
+
+print(student.jmeno)
+student.uceni_se()
+student2.uceni_se()
