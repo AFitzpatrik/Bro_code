@@ -1,0 +1,36 @@
+ATRIBUTY(atributes)=
+        Atributy objektu jsou vlastnosti neboli data, která uschovává (např. u člověka jméno a věk, u databáze heslo). Jedná se o prosé proměnné
+        se kterými jsme již stokrát pracovali. Někdy o nich hovoříme jako o vnitřním stavu objektu.
+Např.
+
+class Auto:
+    def __init__(self, barva, výkon):
+        self.barva = barva
+        self.výkon = výkon
+
+
+
+auto1 = Auto("Červená", "35kw")
+
+print(auto1.výkon)
+print(auto1.barva)
+
+Zde je tedy objekt "auto1" a jeho atributy jsou "výkon" a "barva"
+-----------------------------------------------------------------------------------------------------------------------
+METODY(methods)=
+        Metody jsou schopnostmi, které umí objekt vykonávat.
+        Metoda je vlastně funkce, která je uvnitř třídy a ozančuje se stejně :def ...., hlavní rozdíl je tedy v kontextu
+        použití.
+
+class Auto:
+    def __init__(self, barva, výkon):
+    ....
+    def jizda():
+    ....
+
+def init, def jizda jsou tedy metody
+-----------------------------------------------------------------------------------------------------------------------
+TŘÍDA(class)=
+        Třída je hlavně vzor, podle kterého se objekty vytvářejí.
+        Objekt který se vytváří podle třídy, se nazývá instance. Instance mají stejné rozhraní jako třída, podle které
+        se vytvářejí.

@@ -1,0 +1,73 @@
+V pythonu je self jedním z klíčových konceptů v OOP a je důležité ho pochopit.
+
+Když vytváříme objekt(instanci třídy), představíme si ho jako speciální box. Každý box (objekt) má svá vlastní data(atributy)
+a nástroje, které s tímto boxem lze dělat (metody/funkce)
+Když chceme aby box, něco udělal, potřebujeme způsob jak na tento konkrétní box odkazovat. a self je způsob jak toho dosáhnout.
+
+
+class Box:
+    def __init__(self, barva):
+        self.barva = barva
+
+    def popis(self):
+        print(f"Box má barvu {self.barva}.")
+
+# Vytvoření objektů třídy Box
+box1 = Box("červený")
+box2 = Box("modrý")
+
+# Použití metod objektů
+box1.popis()  # Výstup: Box má barvu červený.
+box2.popis()  # Výstup: Box má barvu modrý.
+V tomto příkladu:
+
+Definice třídy
+Box
+:
+
+Konstruktor
+__init__
+ inicializuje atribut barva pro každou instanci třídy. self
+.barva odkazuje na atribut konkrétního objektu.
+Metoda
+popis
+ používá
+self
+ k přístupu k atributu
+barva
+ konkrétní instance a vypíše jeho hodnotu.
+Vytvoření objektů:
+
+box1 je instance třídy
+Box
+ s atributem
+barva
+ nastaveným na
+"červený"
+.
+box2 je instance třídy
+Box
+ s atributem
+barva
+ nastaveným na
+"modrý"
+.
+Použití metod:
+
+box
+1.
+popis
+()
+ vypíše barvu boxu box1.
+box
+2.
+popis
+()
+ vypíše barvu boxu box2.
+Tento kratší příklad jasně ukazuje, jak
+self
+ umožňuje přístup k atributům konkrétní instance třídy.
+
+398
+Začátek Vaší konverzace
+
