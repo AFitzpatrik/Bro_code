@@ -6,12 +6,13 @@
 #           1. Inheritance = An object could be treated of the same type as its parent clas
 #           2. Duck typing = object must have necessary attributes/methods
 
-
+from abc import ABC, abstractmethod
 
 
 class Shape:
-    deff area(self)
+    def area(self):
 
+@abstractmethod
 class Circle(Shape):
     pass
 
@@ -22,7 +23,7 @@ class Triangle(Shape):
     pass
 
 
-shapes = [Circle(), Square(), Triangle()]
+shapes = [Circle(), Square(), Triangle()] #objekty v listu
 
 
 
