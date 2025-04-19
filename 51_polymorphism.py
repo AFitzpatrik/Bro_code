@@ -1,29 +1,40 @@
-#Polymorphism = greek word that means to "have many forms or faces"
-#           POLY = MANY
-#           MORPH = FORM
-
-#           TWO WAYS TO ACHIEVE POLYMORPHISM
-#           1. Inheritance = An object could be treated of the same type as its parent clas
-#           2. Duck typing = object must have necessary attributes/methods
 
 from abc import ABC, abstractmethod
 
+class Shape(ABC):
 
-class Shape:
+    @abstractmethod
     def area(self):
+        pass
 
-@abstractmethod
 class Circle(Shape):
-    pass
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
 
 class Square(Shape):
-    pass
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side ** 2
 
 class Triangle(Shape):
-    pass
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
 
+    def area(self):
+        return self.base * self.height * 0.5
 
-shapes = [Circle(), Square(), Triangle()] #objekty v listu
+class Pizza(Circle):
+    def __init__(self, topping, radius):
+        super().__init__(radius)
+        self.topping = topping
 
+shapes = [Circle(4), Square(5), Triangle(6, 7), Pizza("pepperoni", 15)]
 
-
+for shape in shapes:
+    print(f"{shape.area()}cm²")
