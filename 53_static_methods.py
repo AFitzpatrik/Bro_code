@@ -5,7 +5,7 @@
 
 
 class Employee:
-    def __init__(self, name, postition):
+    def __init__(self, name, position):
         self.name = name
         self.position = position
 
@@ -13,15 +13,21 @@ class Employee:
         return (f"{self.name} is a {self.position}")  # Instance method
 
     @staticmethod
-    '''
-    Static method = belongs to a Class Employee, not to a object, created from that class
-    '''
+#Static method = belongs to a Class Employee, not to a object, created from that class
+
     def is_valid_position(position):
         valid_positions = ["Manager", "Cashier", "Cook", "Janitor"]
         return position in valid_positions #zde vracíme zda POSITION je IN VALID_POSITIONS listu, TRUE nebo FALSE
 
 
-print(Employee.is_valid_position("Cook"))
+employee1 = Employee("Eugune", "Manager")
+employee2 = Employee("Squidward", "Cashier")
+employee3 = Employee("Spongebob", "Cook")
 
-print(Employee.is_valid_position("Nigga"))
+
+print(Employee.is_valid_position("Cook"))
+print(Employee.is_valid_position("Cigan"))
+print(employee1.get_info())
+print(employee2.get_info())
+print(employee3.get_info())
 
