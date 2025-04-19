@@ -41,7 +41,7 @@ def display_man(wrong_guesses):
 
 def display_hint(hint):
     # Display hint, after guess. Flip empty _ to a letter, if guess correctly, display "INCORRECT" if not.
-    pass
+    print(" ".join(hint)) #Add "SPACE" to every element in hint list
 
 
 def display_answer(answer):
