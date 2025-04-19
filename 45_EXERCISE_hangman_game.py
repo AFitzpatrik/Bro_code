@@ -46,7 +46,7 @@ def display_hint(hint):
 
 def display_answer(answer):
     # Display correct answer once the game is won/lost
-    pass
+    print(" ".join(answer))
 
 
 def main():
@@ -59,6 +59,7 @@ def main():
     while is_running:
         display_man(wrong_guesses)
         display_hint(hint)
+        #display_answer(answer) #Uncomment to display the answer
         guess = input("Enter a letter: ").lower()  # Make input lower case
 
 
