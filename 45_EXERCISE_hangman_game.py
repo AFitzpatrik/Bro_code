@@ -1,7 +1,7 @@
 # Hangman game
 import random
+from words_list_for_hangman import words  # Import words from a separate file
 
-words = ("apple", "orange", "banana", "coconut", "pineapple")
 random.choice(words)
 hangman_art = {0: ("   ",
                    "   ",
@@ -78,5 +78,20 @@ def main():
                     hint[i] = guess
         else:
             wrong_guesses += 1
+
+        if "_" not in hint:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("You win!")
+            is_running = False
+        elif wrong_guesses >= len(hangman_art) - 1:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("You lose!")
+            is_running = False
+
+
+
 if __name__ == "__main__":
     main()
+
