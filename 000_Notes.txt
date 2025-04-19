@@ -44,3 +44,6 @@ https://www.smoljames.com/roadmap
 Course: https://www.youtube.com/watch?v=ix9cRaBkVe0&t=745s
 Exercises : https://www.youtube.com/watch?v=4wGuB3oAKc4
 
+#Harvard CS50 Python course
+https://www.youtube.com/watch?v=nLRL_NcnK-4&t=29844s
+
