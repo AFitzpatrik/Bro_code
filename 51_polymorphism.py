@@ -31,7 +31,7 @@ class Triangle(Shape):
 
 class Pizza(Circle):
     def __init__(self, topping, radius):
-        super().__init__(radius)
+        super().__init__(radius) #super() zavolá init z parent classy, v tomto případě circle
         self.topping = topping
 
 shapes = [Circle(4), Square(5), Triangle(6, 7), Pizza("pepperoni", 15)]
