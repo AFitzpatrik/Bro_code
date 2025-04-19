@@ -41,7 +41,7 @@ def display_man(wrong_guesses):
 
 def display_hint(hint):
     # Display hint, after guess. Flip empty _ to a letter, if guess correctly, display "INCORRECT" if not.
-    print(" ".join(hint)) #Add "SPACE" to every element in hint list
+    print(" ".join(hint)) # Add "SPACE" to every element in hint list
 
 
 def display_answer(answer):
@@ -62,6 +62,21 @@ def main():
         #display_answer(answer) #Uncomment to display the answer
         guess = input("Enter a letter: ").lower()  # Make input lower case
 
+        if len(guess) != 1 or not guess.isalpha(): #Check if input is a single letter or is not a letter
+            print("Invalid input. Please enter a single letter.")
+            continue
 
+        if guess in guessed_letters: #Check if letter was already guessed
+            print(f"{guess} is already guessed. Enter a different letter.")
+            continue
+
+        guessed_letters.add(guess)  #Add the guessed letter to the set
+
+        if guess in answer:
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i] = guess
+        else:
+            wrong_guesses += 1
 if __name__ == "__main__":
     main()
