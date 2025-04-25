@@ -32,8 +32,17 @@ class Book:
         return self.num_pages + other.num_pages
 
 
-    def __contains__(self, keyword):
+    def __contains__(self, keyword): #hledání slova v objektu
         return keyword in self.title
+
+
+    def __getitem__(self, key):
+        if key == 'title':
+            return self.title
+        elif key == 'author':
+            return self.author
+        elif key == 'num_pages':
+            return self.num_pages
 
 book1 = Book("The Hobbit", "J.R.R. Tolkien", 310) #instance třídy BOOK
 book2 = Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223) #instance třídy BOOK
@@ -46,3 +55,6 @@ print(book4 < book1)
 print(book1 > book2)
 print(book1 + book2)
 print("Lion" in book3)
+print(book1['title']) #print title of the book
+print(book1['author'])
+print(book1['num_pages'])
