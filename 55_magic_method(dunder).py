@@ -43,6 +43,8 @@ class Book:
             return self.author
         elif key == 'num_pages':
             return self.num_pages
+        else:
+           return f"Key '{key}' not found in the book object."
 
 book1 = Book("The Hobbit", "J.R.R. Tolkien", 310) #instance třídy BOOK
 book2 = Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223) #instance třídy BOOK
@@ -58,3 +60,4 @@ print("Lion" in book3)
 print(book1['title']) #print title of the book
 print(book1['author'])
 print(book1['num_pages'])
+print(book1['audiot'])
