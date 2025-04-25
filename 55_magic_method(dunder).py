@@ -19,6 +19,14 @@ class Book:
     def __eq__(self, other):#equals, self and other book
         return self.title == other.title and self.author == other.author
 
+    def __lt__(self, other):#less than
+        return self.num_pages < other.num_pages
+
+
+
+    def __add__(self, other):
+        return self.num_pages + other.num_pages
+
 book1 = Book("The Hobbit", "J.R.R. Tolkien", 310) #instance třídy BOOK
 book2 = Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223) #instance třídy BOOK
 book3 = Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis", 172) #instance třídy BOOK
@@ -26,3 +34,5 @@ book4 = Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis", 172)
 
 print(book1)
 print(book3 == book4)
+print(book4 < book1)
+print(book1 + book2)
