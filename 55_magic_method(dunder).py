@@ -23,6 +23,10 @@ class Book:
         return self.num_pages < other.num_pages
 
 
+    def __gt__(self, other):
+        return self.num_pages > other.num_pages
+
+
 
     def __add__(self, other):
         return self.num_pages + other.num_pages
@@ -35,4 +39,5 @@ book4 = Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis", 172)
 print(book1)
 print(book3 == book4)
 print(book4 < book1)
+print(book1 > book2)
 print(book1 + book2)
