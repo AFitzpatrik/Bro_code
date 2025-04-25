@@ -4,7 +4,6 @@
 
 
 
-
 class Rectangle:
     def __init__(self, width, height):
         self._width = width
@@ -19,8 +18,23 @@ class Rectangle:
     def height(self):
         return f" {self._height:.1f}cm"
 
+    @width.setter
+    def width(self, new_width):
+        if new_width > 0:
+            self._width = new_width
+        else:
+            print("Width must be greater than 0")
+
+    @height.setter
+    def width(self, new_height):
+        if new_height > 0:
+            self._width = new_height
+        else:
+            print("Height must be greater than 0")
 
 
 rectangle = Rectangle(3, 4)
+rectangle.width = 10
+
 print(rectangle.width)
 print(rectangle.height)
