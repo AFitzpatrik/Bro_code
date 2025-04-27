@@ -1,8 +1,8 @@
 #Python writing files (.txt, .json, .csv)
 
 
-txt_data = "I LOVE KEBAB"
-file_path = "output.txt"
+#txt_data = "I LOVE KEBAB"
+#file_path = "output.txt"
 
 '''
 # VYTVOŘENÍ SOUBORU A NAPSÁNÍ TEXTU DO NĚJ (Text = i like pizza, soubor = output.txt)
@@ -33,6 +33,7 @@ except FileExistsError:
 '''
 #---------------------------------------------------------------------------------------------------------
 
+'''
 employees = ["John", "Jane", "Doe", "Smith"]
 file_path = "employees.txt"
 
@@ -41,5 +42,17 @@ try:
         for employee in employees:
             file.write(employee + "\n")
         print(f"{employees} was written to {file_path}")
+except FileExistsError:
+    print(f"{file_path} already exists")
+'''
+#---------------------------------------------------------------------------------------------------------
+import json
+employees = {"name": "Spongebob", "age": 20, "job": "Cashier"}
+file_path = "employees.json"
+
+try:
+    with open(file=file_path,mode= "a") as file: # w = write, a = append, r = read, x = exclusive creation
+        json.dump(employees, file, indent=4) #converutje dictionary na json string to output it
+        print(f"json file was created! : {file_path}")
 except FileExistsError:
     print(f"{file_path} already exists")
