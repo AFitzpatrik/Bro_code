@@ -6,21 +6,22 @@
 #            get_ice_cream("vanilla")
 
 def add_sprinkles(func):
-    def wrapper():
+    def wrapper(*args, **kwargs):
         print("Adding sprinkles!")
-        func()
+        func(*args, **kwargs)
     return wrapper
 
 def add_fudge(func):
-    def wrapper():
+    def wrapper(*args, **kwargs):
         print("Adding fudge!")
-        func()
+        func(*args, **kwargs)
     return wrapper
 
 @add_fudge
 @add_sprinkles #extends the behavior of get_ice_cream
-def get_ice_cream():
-    print("Here is your ice cream!")
+def get_ice_cream(flavour):
+    print(f"Here is your {flavour} ice cream!")
 
 
-get_ice_cream()
+get_ice_cream("vanilla")
+get_ice_cream("Chocolate")
