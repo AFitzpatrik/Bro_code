@@ -46,13 +46,33 @@ except FileExistsError:
     print(f"{file_path} already exists")
 '''
 #---------------------------------------------------------------------------------------------------------
+'''
 import json
 employees = {"name": "Spongebob", "age": 20, "job": "Cashier"}
 file_path = "employees.json"
 
 try:
-    with open(file=file_path,mode= "a") as file: # w = write, a = append, r = read, x = exclusive creation
+    with open(file=file_path,mode= "w") as file: # w = write, a = append, r = read, x = exclusive creation
         json.dump(employees, file, indent=4) #converutje dictionary na json string to output it
         print(f"json file was created! : {file_path}")
+except FileExistsError:
+    print(f"{file_path} already exists")
+'''
+#---------------------------------------------------------------------------------------------------------
+#CSV = Comma Separated Values
+import json
+import csv
+file_path = "employees.csv"
+employees = [["Name", "Age", "Job"],
+             ["Spongebob", 20, "Cook"],
+             ["Patrick", 37, "Cashier"],
+             ["Sandy", 25, "Scientist"]]
+
+try:
+    with open(file=file_path,mode= "w", newline="") as file: # w = write, a = append, r = read, x = exclusive creation
+        writer = csv.writer(file)
+        for row in employees:
+            writer.writerow(row)
+        print(f"csv file was created! : {file_path}")
 except FileExistsError:
     print(f"{file_path} already exists")
