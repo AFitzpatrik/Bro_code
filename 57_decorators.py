@@ -17,7 +17,7 @@ def add_fudge(func):
         func()
     return wrapper
 
-
+@add_fudge
 @add_sprinkles #extends the behavior of get_ice_cream
 def get_ice_cream():
     print("Here is your ice cream!")
