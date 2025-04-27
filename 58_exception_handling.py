@@ -10,4 +10,6 @@ except ZeroDivisionError:
     print("You cannot divide by zero!")
 except ValueError:
     print("Please enter a valid number!")
+except Exception: #This will catch any other exceptions that are not specifically handled above, shouldn't be used solo.
+    print("An unexpected error occurred!")
 
