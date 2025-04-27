@@ -35,3 +35,9 @@ while True:
         print("An unexpected error occurred!")
     finally:
         print("Do some cleanup here.")
+
+'''
+- **Blok `finally` garantuje, že kód uvnitř něj se vždy vykoná, a to bez ohledu na výskyt výjimky.**
+- **Použití `finally` je nutné, když se pracuje s prostředky, které je potřeba uzavřít nebo správně uvolnit.**
+- Pokud se aplikace obejde bez čisticích operací, blok `finally` není potřeba.
+'''
