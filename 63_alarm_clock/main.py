@@ -15,18 +15,16 @@ def set_alarm(alarm_time): #Funkce přijímá jeden argument, alarm_time což je
         if current_time == alarm_time:
             print("Alarm ringing!🔔")
 
+            pygame.mixer.init()
+            pygame.mixer.music.load(sound_file)
+            pygame.mixer.music.play()
+
+            while pygame.mixer.music.get_busy(): # Dokud hudba hraje
+                time.sleep(1)
+
             is_running = False
 
         time.sleep(1)
-
-
-
-
-
-
-
-
-
 
 if __name__ == "__main__":
     alarm_time = input("Enter the alarm time in 24 hour format (HH:MM:SS): ")
