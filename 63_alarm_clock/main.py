@@ -12,6 +12,11 @@ def set_alarm(alarm_time): #Funkce přijímá jeden argument, alarm_time což je
         current_time = datetime.datetime.now().strftime("%H:%M:%S")  # Získání aktuálního času ve formátu HH:MM:SS
         print(current_time)
 
+        if current_time == alarm_time:
+            print("Alarm ringing!")
+
+            is_running = False
+
         time.sleep(1)
 
 
