@@ -13,7 +13,7 @@ def set_alarm(alarm_time): #Funkce přijímá jeden argument, alarm_time což je
         print(current_time)
 
         if current_time == alarm_time:
-            print("Alarm ringing!")
+            print("Alarm ringing!🔔")
 
             is_running = False
 
