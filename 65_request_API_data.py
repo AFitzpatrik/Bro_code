@@ -2,7 +2,7 @@
 
 import requests
 
-base_url = "https://pokeapi.co/api/v2/pokemon/"
+base_url = "https://pokeapi.co/api/v2/"
 
 def get_pokemon_info(name): #name je parametr funkce
     url = f"{base_url}/pokemon/{name}" #vytvoříme url adresu
